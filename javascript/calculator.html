@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript</title>	
+
+</head>
+<style>
+button{
+	background-color: red;
+	color: black;
+	border-radius: 5px;
+	font-weight: bolder;
+}
+
+</style>
+
+<body>
+	<h1>CALCULATOR</h1>
+	<script>
+		function sum(){
+			var a,b;
+			a=parseInt(txta.value);
+			b=parseInt(txtb.value);
+	
+			c=a+b;
+			alert('sum of a and b is '+c);
+		}
+		function sub(){
+			var a,b;
+			a=parseInt(txta.value);
+			b=parseInt(txtb.value);
+	
+			c=a-b;
+			alert('sub of a and b is '+c);
+		}
+		function mult(){
+			var a,b;
+			a=parseInt(txta.value);
+			b=parseInt(txtb.value);
+	
+			c=a*b;
+			alert('mult of a and b is '+c);
+		}
+		function div(){
+			var a,b;
+			a=parseInt(txta.value);
+			b=parseInt(txtb.value);
+	
+			c=a/b;
+			alert('div of a and b is '+c);
+		}
+	</script>
+
+	Enter any number:
+	<input type="text" name="txta" id="txta">
+	<br><br>
+	Enter any number:
+	<input type="text" name="txtb" id="txtb">
+	<br><br>
+	<br><br>
+	<button onclick="sum()" id="btnSubmit">Sum</button>
+	<button onclick="sub()" id="btnSubmit">Sub</button>
+	<button onclick="mult()" id="btnSubmit">mult</button>
+	<button onclick="div()" id="btnSubmit">div</button>
+</body>
+</html>
+
