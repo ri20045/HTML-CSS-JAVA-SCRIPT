@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript</title>	
+
+</head>
+<style>
+	#btn{
+		padding: 10px;
+		background-color: red;
+		color: black;
+		border: 2px solid black;
+		font-weight: bolder;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+</style>
+<body>
+	<h1>This is my Heading</h1>
+	<div id="para">
+		We need to follow the path of sustainable development to effectively address the concerns of climate change. We need to minimise the use of fossil fuels, which is the major cause for global warming. We must adopt alternative sources of energy, such as hydropower, solar and wind energy to make a progressive transition to clean energy. Mahatma Gandhi said that, “Earth provides enough to satisfy every man’s need, but not any man’s greed”. With this view, we must remodel our outlook and achieve the goal of sustainable development. By adoption of clean technologies, equitable distribution of resources and addressing the issues of equity and justice, we can make our developmental process more harmonious with nature.
+	</div><br>
+	<button id="btn" onclick="togglehide()">Show/Hide</button>
+<script>
+	let para=document.getElementById('para');
+	para.addEventListener('mouseover',function run(){
+		alert('mouse inside')
+	})
+	para.addEventListener('mouseout',function run(){
+		alert('mouse outside')
+		})
+
+ function togglehide(){
+ 	let btn=document.getElementById('btn');
+ 	let para=document.getElementById('para');
+ 	if(para.style.display!='none'){
+ 		para.style.display='none';
+ 	}
+ 	else{
+ 		para.style.display='block';
+ 	}
+ }
+</script>
+</body>
+</html>
+
